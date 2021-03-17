@@ -1,1 +1,82 @@
-!function(t,n){if("object"==typeof exports&&"object"==typeof module)module.exports=n();else if("function"==typeof define&&define.amd)define([],n);else{var e=n();for(var d in e)("object"==typeof exports?exports:t)[d]=e[d]}}(this,function(){return function(t){function n(d){if(e[d])return e[d].exports;var c=e[d]={exports:{},id:d,loaded:!1};return t[d].call(c.exports,c,c.exports,n),c.loaded=!0,c.exports}var e={};return n.m=t,n.c=e,n.p="",n(0)}([function(module,exports){eval("import './input-date-polyfill.scss';\nimport Input from './input.js';\n\nconst addPickers = () => {\n  Input.addPickerToOtherInputs(); // Check if type=\"date\" is supported.\n\n  if (!Input.supportsDateInput()) {\n    Input.addPickerToDateInputs();\n  }\n}; // Run the above code on any <input type=\"date\"> in the document, also on dynamically created ones.\n\n\naddPickers();\ndocument.addEventListener(`DOMContentLoaded`, () => {\n  addPickers();\n}); // This is also on mousedown event so it will capture new inputs that might\n// be added to the DOM dynamically.\n\ndocument.querySelector(`body`).addEventListener(`mousedown`, () => {\n  addPickers();\n});//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiMC5qcyIsInNvdXJjZXMiOlsid2VicGFjazovLy8uL2lucHV0LWRhdGUtcG9seWZpbGwuanM/ZDFkYyJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgJy4vaW5wdXQtZGF0ZS1wb2x5ZmlsbC5zY3NzJztcbmltcG9ydCBJbnB1dCBmcm9tICcuL2lucHV0LmpzJztcblxuY29uc3QgYWRkUGlja2VycyA9ICgpID0+IHtcbiAgSW5wdXQuYWRkUGlja2VyVG9PdGhlcklucHV0cygpO1xuICAvLyBDaGVjayBpZiB0eXBlPVwiZGF0ZVwiIGlzIHN1cHBvcnRlZC5cbiAgaWYoIUlucHV0LnN1cHBvcnRzRGF0ZUlucHV0KCkpIHtcbiAgICBJbnB1dC5hZGRQaWNrZXJUb0RhdGVJbnB1dHMoKTtcbiAgfVxufTtcblxuLy8gUnVuIHRoZSBhYm92ZSBjb2RlIG9uIGFueSA8aW5wdXQgdHlwZT1cImRhdGVcIj4gaW4gdGhlIGRvY3VtZW50LCBhbHNvIG9uIGR5bmFtaWNhbGx5IGNyZWF0ZWQgb25lcy5cbmFkZFBpY2tlcnMoKTtcblxuZG9jdW1lbnQuYWRkRXZlbnRMaXN0ZW5lcihgRE9NQ29udGVudExvYWRlZGAsICgpID0+IHtcbiAgYWRkUGlja2VycygpO1xufSk7XG5cbi8vIFRoaXMgaXMgYWxzbyBvbiBtb3VzZWRvd24gZXZlbnQgc28gaXQgd2lsbCBjYXB0dXJlIG5ldyBpbnB1dHMgdGhhdCBtaWdodFxuLy8gYmUgYWRkZWQgdG8gdGhlIERPTSBkeW5hbWljYWxseS5cbmRvY3VtZW50LnF1ZXJ5U2VsZWN0b3IoYGJvZHlgKS5hZGRFdmVudExpc3RlbmVyKGBtb3VzZWRvd25gLCAoKSA9PiB7XG4gIGFkZFBpY2tlcnMoKTtcbn0pO1xuXG5cblxuLy8gV0VCUEFDSyBGT09URVIgLy9cbi8vIC4vaW5wdXQtZGF0ZS1wb2x5ZmlsbC5qcyJdLCJtYXBwaW5ncyI6IkFBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFFQTtBQUNBO0FBQ0E7QUFHQTtBQUNBO0FBQUE7QUFDQTsiLCJzb3VyY2VSb290IjoiIn0=")}])});
+(function webpackUniversalModuleDefinition(root, factory) {
+	if(typeof exports === 'object' && typeof module === 'object')
+		module.exports = factory();
+	else if(typeof define === 'function' && define.amd)
+		define([], factory);
+	else {
+		var a = factory();
+		for(var i in a) (typeof exports === 'object' ? exports : root)[i] = a[i];
+	}
+})(this, function() {
+return /******/ (function(modules) { // webpackBootstrap
+/******/ 	// The module cache
+/******/ 	var installedModules = {};
+
+/******/ 	// The require function
+/******/ 	function __webpack_require__(moduleId) {
+
+/******/ 		// Check if module is in cache
+/******/ 		if(installedModules[moduleId])
+/******/ 			return installedModules[moduleId].exports;
+
+/******/ 		// Create a new module (and put it into the cache)
+/******/ 		var module = installedModules[moduleId] = {
+/******/ 			exports: {},
+/******/ 			id: moduleId,
+/******/ 			loaded: false
+/******/ 		};
+
+/******/ 		// Execute the module function
+/******/ 		modules[moduleId].call(module.exports, module, module.exports, __webpack_require__);
+
+/******/ 		// Flag the module as loaded
+/******/ 		module.loaded = true;
+
+/******/ 		// Return the exports of the module
+/******/ 		return module.exports;
+/******/ 	}
+
+
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = modules;
+
+/******/ 	// expose the module cache
+/******/ 	__webpack_require__.c = installedModules;
+
+/******/ 	// __webpack_public_path__
+/******/ 	__webpack_require__.p = "";
+
+/******/ 	// Load entry module and return exports
+/******/ 	return __webpack_require__(0);
+/******/ })
+/************************************************************************/
+/******/ ([
+/* 0 */
+/***/ (function(module, exports) {
+
+	import './input-date-polyfill.scss';
+	import Input from './input.js';
+
+	const addPickers = () => {
+	  Input.addPickerToOtherInputs(); // Check if type="date" is supported.
+
+	  if (!Input.supportsDateInput()) {
+	    Input.addPickerToDateInputs();
+	  }
+	}; // Run the above code on any <input type="date"> in the document, also on dynamically created ones.
+
+
+	addPickers();
+	document.addEventListener(`DOMContentLoaded`, () => {
+	  addPickers();
+	}); // This is also on mousedown event so it will capture new inputs that might
+	// be added to the DOM dynamically.
+
+	document.querySelector(`body`).addEventListener(`mousedown`, () => {
+	  addPickers();
+	});
+
+/***/ })
+/******/ ])
+});
+;

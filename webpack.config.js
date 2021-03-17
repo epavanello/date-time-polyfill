@@ -1,48 +1,32 @@
-var webpack = require('webpack');
+var webpack = require("webpack");
 
 module.exports = {
-  entry: './input-date-polyfill.js',
-
-  plugins: [
-    new webpack.optimize.UglifyJsPlugin({
-      mangle: {
-        except: ['$super', '$', 'exports', 'require']
-      },
-      compress: {
-        warnings: false
-      }
-    })
-  ],
-
+  entry: "./input-date-polyfill.js",
   resolve: {
-    extensions: ['', '.js']
+    extensions: ["", ".js"],
   },
-
   module: {
     loaders: [
       {
         test: /\.js$/,
-        exclude: /(node_modules)/,
-        loader: 'babel',
-        query: {
-          cacheDirectory: true
-        }
+        loader: "babel-loader",
+        options: {
+          cacheDirectory: true,
+        },
       },
       {
         test: /\.css$/,
-        loader: 'style!css'
+        loader: "style!css",
       },
       {
         test: /\.scss$/,
-        loader: 'style!css!sass'
-      }
-    ]
+        loader: "style!css!sass",
+      },
+    ],
   },
-
-  devtool: 'cheap-module-eval-source-map',
   output: {
-    path: process.cwd()+'/',
-    filename: 'input-date-polyfill.dist.js',
-    libraryTarget: 'umd'
-  }
+    path: process.cwd() + "/",
+    filename: "input-date-polyfill.dist.js",
+    libraryTarget: "umd",
+  },
 };
