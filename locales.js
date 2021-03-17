@@ -3,16 +3,8 @@
 // Days and months must be listed in the order they should display.
 
 const locales = {
-  'en_en-US_en-UK': {
-    days: [
-      `Su`,
-      `Mo`,
-      `Tu`,
-      `We`,
-      `Th`,
-      `Fr`,
-      `Sa`
-    ],
+  "en_en-US_en-UK": {
+    days: [`Su`, `Mo`, `Tu`, `We`, `Th`, `Fr`, `Sa`],
     months: [
       `January`,
       `February`,
@@ -25,11 +17,11 @@ const locales = {
       `September`,
       `October`,
       `November`,
-      `December`
-    ]
+      `December`,
+    ],
   },
   /* Simplified Chinese */
-  'zh_zh-CN': {
+  "zh_zh-CN": {
     days: [
       `星期天`,
       `星期一`,
@@ -37,7 +29,7 @@ const locales = {
       `星期三`,
       `星期四`,
       `星期五`,
-      `星期六`
+      `星期六`,
     ],
     months: [
       `一月`,
@@ -51,20 +43,12 @@ const locales = {
       `九月`,
       `十月`,
       `十一月`,
-      `十二月`
-    ]
+      `十二月`,
+    ],
   },
   /* Simplified Chinese, informal*/
-  'zh-Hans_zh-Hans-CN': {
-    days: [
-      `周日`,
-      `周一`,
-      `周二`,
-      `周三`,
-      `周四`,
-      `周五`,
-      `周六`
-    ],
+  "zh-Hans_zh-Hans-CN": {
+    days: [`周日`, `周一`, `周二`, `周三`, `周四`, `周五`, `周六`],
     months: [
       `一月`,
       `二月`,
@@ -77,20 +61,12 @@ const locales = {
       `九月`,
       `十月`,
       `十一月`,
-      `十二月`
-    ]
+      `十二月`,
+    ],
   },
   /* Traditional Chinese */
-  'zh-Hant_zh-Hant-TW': {
-    days: [
-      `週日`,
-      `週一`,
-      `週二`,
-      `週三`,
-      `週四`,
-      `週五`,
-      `週六`
-    ],
+  "zh-Hant_zh-Hant-TW": {
+    days: [`週日`, `週一`, `週二`, `週三`, `週四`, `週五`, `週六`],
     months: [
       `一月`,
       `二月`,
@@ -103,11 +79,11 @@ const locales = {
       `九月`,
       `十月`,
       `十一月`,
-      `十二月`
-    ]
+      `十二月`,
+    ],
   },
   /* German (Germany) */
-  'de_de-DE': {
+  "de_de-DE": {
     days: [
       `Sonntag`,
       `Montag`,
@@ -115,7 +91,7 @@ const locales = {
       `Mittwoch`,
       `Donnerstag`,
       `Freitag`,
-      `Samstag`
+      `Samstag`,
     ],
     months: [
       `Januar`,
@@ -129,11 +105,11 @@ const locales = {
       `September`,
       `Oktober`,
       `November`,
-      `Dezember`
-    ]
+      `Dezember`,
+    ],
   },
   /* Dutch */
-  'nl_nl-NL_nl-BE': {
+  "nl_nl-NL_nl-BE": {
     days: [
       `Zondag`,
       `Maandag`,
@@ -141,7 +117,7 @@ const locales = {
       `Woensdag`,
       `Donderdag`,
       `Vrijdag`,
-      `Zaterdag`
+      `Zaterdag`,
     ],
     months: [
       `Januari`,
@@ -155,22 +131,14 @@ const locales = {
       `September`,
       `Oktober`,
       `November`,
-      `December`
+      `December`,
     ],
     today: `Vandaag`,
-    format: `D/M/Y`
+    format: `D/M/Y`,
   },
   /* Portuguese */
-  'pt_pt-BR': {
-    days: [
-      `Dom`,
-      `Seg`,
-      `Ter`,
-      `Qua`,
-      `Qui`,
-      `Sex`,
-      `Sáb`
-    ],
+  "pt_pt-BR": {
+    days: [`Dom`, `Seg`, `Ter`, `Qua`, `Qui`, `Sex`, `Sáb`],
     months: [
       `Janeiro`,
       `Fevereiro`,
@@ -183,21 +151,13 @@ const locales = {
       `Setembro`,
       `Outubro`,
       `Novembro`,
-      `Dezembro`
+      `Dezembro`,
     ],
-    today: "Hoje"
+    today: "Hoje",
   },
   /* French */
-  'fr_fr-FR_fr-BE': {
-    days: [
-      `Di`,
-      `Lu`,
-      `Ma`,
-      `Me`,
-      `Je`,
-      `Ve`,
-      `Sa`
-    ],
+  "fr_fr-FR_fr-BE": {
+    days: [`Di`, `Lu`, `Ma`, `Me`, `Je`, `Ve`, `Sa`],
     months: [
       `Janvier`,
       `Février`,
@@ -210,22 +170,14 @@ const locales = {
       `Septembre`,
       `Octobre`,
       `Novembre`,
-      `Décembre`
+      `Décembre`,
     ],
     today: `Aujourd'hui`,
-    format: `D/M/Y`
+    format: `D/M/Y`,
   },
   /* Spanish */
-  'es_es-VE': {
-    days: [
-      `Do`,
-      `Lu`,
-      `Ma`,
-      `Mi`,
-      `Ju`,
-      `Vi`,
-      `Sa`
-    ],
+  "es_es-VE": {
+    days: [`Do`, `Lu`, `Ma`, `Mi`, `Ju`, `Vi`, `Sa`],
     months: [
       `Enero`,
       `Febrero`,
@@ -238,13 +190,13 @@ const locales = {
       `Septiembre`,
       `Octubre`,
       `Noviembre`,
-      `Diciembre`
+      `Diciembre`,
     ],
     today: `Hoy`,
-    format: `D/M/Y`
+    format: `D/M/Y`,
   },
   /* Danish */
-  'da_da-dk': {
+  "da_da-dk": {
     days: [
       `Søndag`,
       `Mandag`,
@@ -252,7 +204,7 @@ const locales = {
       `Onsdag`,
       `Torsdag`,
       `Fredag`,
-      `Lørdag`
+      `Lørdag`,
     ],
     months: [
       `Januar`,
@@ -266,22 +218,14 @@ const locales = {
       `September`,
       `Oktober`,
       `November`,
-      `December`
+      `December`,
     ],
     today: `I dag`,
-    format: `dd/MM-YYYY`
+    format: `dd/mm-yyyy`,
   },
   /* Russian */
-  'ru_ru-RU_ru-UA_ru-KZ_ru-MD': {
-    days: [
-      `Вс`,
-      `Пн`,
-      `Вт`,
-      `Ср`,
-      `Чт`,
-      `Пт`,
-      `Сб`
-    ],
+  "ru_ru-RU_ru-UA_ru-KZ_ru-MD": {
+    days: [`Вс`, `Пн`, `Вт`, `Ср`, `Чт`, `Пт`, `Сб`],
     months: [
       `Январь`,
       `Февраль`,
@@ -294,22 +238,14 @@ const locales = {
       `Сентябрь`,
       `Октябрь`,
       `Ноябрь`,
-      `Декабрь`
+      `Декабрь`,
     ],
     today: `Сегодня`,
-    format: `D.M.Y`
+    format: `D.M.Y`,
   },
   /* Ukrainian */
-  'uk_uk-UA': {
-    days: [
-      `Нд`,
-      `Пн`,
-      `Вт`,
-      `Ср`,
-      `Чт`,
-      `Пт`,
-      `Сб`
-    ],
+  "uk_uk-UA": {
+    days: [`Нд`, `Пн`, `Вт`, `Ср`, `Чт`, `Пт`, `Сб`],
     months: [
       `Січень`,
       `Лютий`,
@@ -322,49 +258,41 @@ const locales = {
       `Вересень`,
       `Жовтень`,
       `Листопад`,
-      `Грудень`
+      `Грудень`,
     ],
     today: `Cьогодні`,
-    format: `D.M.Y`
+    format: `D.M.Y`,
   },
   /* Swedish (Sweden) */
-    'sv_sv-SE': {
-        days: [
-            `Söndag`,
-            `Måndag`,
-            `Tisdag`,
-            `Onsdag`,
-            `Torsdag`,
-            `Fredag`,
-            `Lördag`
-        ],
-        months: [
-            `Januari`,
-            `Februari`,
-            `Mars`,
-            `April`,
-            `Maj`,
-            `Juni`,
-            `Juli`,
-            `Augusti`,
-            `September`,
-            `Oktober`,
-            `November`,
-            `December`
-        ],
-        today: `Idag`,
-        format: `YYYY-MM-dd`
-    },
-  'test_test-TEST': {
+  "sv_sv-SE": {
     days: [
-      `Foo`,
-      `Mon`,
-      `Tue`,
-      `Wed`,
-      `Thu`,
-      `Fri`,
-      `Sat`
+      `Söndag`,
+      `Måndag`,
+      `Tisdag`,
+      `Onsdag`,
+      `Torsdag`,
+      `Fredag`,
+      `Lördag`,
     ],
+    months: [
+      `Januari`,
+      `Februari`,
+      `Mars`,
+      `April`,
+      `Maj`,
+      `Juni`,
+      `Juli`,
+      `Augusti`,
+      `September`,
+      `Oktober`,
+      `November`,
+      `December`,
+    ],
+    today: `Idag`,
+    format: `yyyy-mm-dd`,
+  },
+  "test_test-TEST": {
+    days: [`Foo`, `Mon`, `Tue`, `Wed`, `Thu`, `Fri`, `Sat`],
     months: [
       `Foo`,
       `February`,
@@ -377,19 +305,11 @@ const locales = {
       `September`,
       `October`,
       `November`,
-      `December`
-    ]
-  },
-  'ja': {
-    days: [
-      `日`,
-      `月`,
-      `火`,
-      `水`,
-      `木`,
-      `金`,
-      `土`
+      `December`,
     ],
+  },
+  ja: {
+    days: [`日`, `月`, `火`, `水`, `木`, `金`, `土`],
     months: [
       `一月`,
       `二月`,
@@ -402,11 +322,31 @@ const locales = {
       `九月`,
       `十月`,
       `十一月`,
-      `十二月`
+      `十二月`,
     ],
     today: `今日`,
-    format: `YYYY-MM-dd`
-  }
+    format: `yyyy-mm-dd`,
+  },
+  "it_it-CH_it-IT": {
+    days: [`Do`, `Lu`, `Ma`, `Me`, `Gi`, `Ve`, `Sa`],
+    months: [
+      `Gennaio`,
+      `Febbraio`,
+      `Marzo`,
+      `Aprile`,
+      `Maggio`,
+      `Giugno`,
+      `Luglio`,
+      `Agosto`,
+      `Settembre`,
+      `Ottobre`,
+      `Novembre`,
+      `Dicembre`,
+    ],
+    daysFrom: 1,
+    today: `Oggi`,
+    format: `dd/mm/yyyy`,
+  },
 };
 
 export default locales;
