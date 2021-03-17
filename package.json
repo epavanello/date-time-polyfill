@@ -1,34 +1,19 @@
 {
   "name": "input-date-polyfill",
-  "version": "2.14.0",
+  "version": "1.0.0",
   "description": "Automatically adds datepickers to input[type=date] on IE, Firefox, and OS X Safari.",
   "main": "input-date-polyfill.dist.js",
   "contributors": [
     {
-      "name": "Brian Blakely",
-      "email": "anewpage.media@gmail.com"
-    },
-    {
-      "name": "Jonathan Gertig",
-      "email": "jcgertig@gmail.com",
-      "url": "https://github.com/jcgertig"
-    },
-    {
-      "name": "Pierre Klink"
-    },
-    {
-      "name": "Kyle Alwyn"
-    },
-    {
-      "name": "Joseph Victor Estolas",
-      "url": "https://github.com/jvestolas"
+      "name": "Pavanello Emanuele",
+      "email": "pavanello.emanuele@gmail.com"
     }
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/jcgertig/input-date-polyfill.git"
+    "url": "git://github.com/epavanello/input-date-polyfill.git"
   },
-  "bugs": "https://github.com/jcgertig/input-date-polyfill/issues",
+  "bugs": "https://github.com/epavanello/input-date-polyfill/issues",
   "keywords": [
     "html5",
     "light",
@@ -60,7 +45,7 @@
   },
   "scripts": {
     "start": "./node_modules/.bin/webpack-dev-server",
-    "start-c9": "./node_modules/.bin/webpack-dev-server --host $IP --port $PORT",
-    "build": "./node_modules/.bin/webpack --devtool=none --optimize-minimize --optimize-occurence-order --optimize-dedupe"
+    "build": "./node_modules/.bin/webpack",
+    "patch": "npm version patch"
   }
 }
