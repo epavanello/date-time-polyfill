@@ -6,7 +6,7 @@ Support dynamically created inputs, so can be used in single page applications.
 
 Forked from [date-input-polyfill](https://github.com/jcgertig/date-input-polyfill). Continuing and fixed as a separate project.
 
-<!-- **Demo available here**: https://jsfiddle.net/pava91/ -->
+**Demo available here**: https://codepen.io/epavanello/pen/poNmOQz
 
 ## Install
 `npm install --save input-date-polyfill`
