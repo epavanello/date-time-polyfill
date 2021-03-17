@@ -25,8 +25,6 @@ module.exports = {
         exclude: /(node_modules)/,
         loader: 'babel',
         query: {
-          plugins: ['transform-runtime'],
-          presets: ['es2015', 'stage-3'],
           cacheDirectory: true
         }
       },
